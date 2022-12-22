@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "ES6",
+    "target": "es6",
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "outDir": "src",
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    "src"
+  ],
+  "include": [
+    "tsSrc"
+  ]
+}

@@ -1,0 +1,28 @@
+@import '~@storeworkflows/ui-kit/lib/styles';
+@import 'main';
+@import 'welcome';
+@import 'layout';
+@import 'type';
+@import 'loader';
+@import 'summary';
+@import 'survey-builder';
+
+:host {
+  --app-container: #f3f6fd;
+  --app-body: #fff;
+  --app-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --selected-color: #1e856d;
+  --text-color: #effffb;
+  --secondary-text-color: #cfcfcf;
+  --grey-color: #323a43;
+  --card-background-color: #434c56;
+  --disabled-color: #a1a1a1;
+  --background-color: #434c56;
+  --header-background-color: #323a43;
+  --dark-accents-color: #25292d;
+  --white-color: #fff;
+}
+
+.tw-project-creator .swf-modal-overlay .modal-dialog.--grid {
+  grid-template-rows: 8rem 1fr 3rem;
+}

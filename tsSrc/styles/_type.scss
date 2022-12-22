@@ -1,0 +1,112 @@
+.type-container {
+  text-align: center;
+  color: rgb(22, 27, 28);
+  line-height: 1.25;
+  font-family: var(
+                  --now-font-family,
+                  "Source Sans Pro",
+                  "Helvetica Neue",
+                  helvetica,
+                  arial,
+                  sans-serif
+  );
+
+  .header-text {
+    font-weight: lighter;
+    margin-bottom: 0.25rem;
+  }
+
+  .body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .select-type-option-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .select-type-option {
+    position: relative;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    width: 15.625rem;
+    margin: 0.5rem;
+    border: 0.0625rem solid transparent;
+    align-items: center;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+
+    &.is-checked {
+      background: rgb(221, 237, 233);
+    }
+
+    &.is-checked,
+    &:hover {
+      border-color: rgb(30, 133, 109);
+      -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+
+      .option--checkbox {
+        visibility: visible;
+      }
+    }
+  }
+
+  .option--body {
+    display: grid;
+    grid-template-rows: 150px 20px 1fr;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .option--checkbox {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    visibility: hidden;
+  }
+
+  .option--body__img {
+    height: 150px;
+    max-width: 100%;
+  }
+
+  .option--body__label {
+    margin-top: 1rem;
+  }
+
+  .option--body__description {
+    color: rgb(66, 80, 81);
+    margin-bottom: 1rem;
+  }
+}
+

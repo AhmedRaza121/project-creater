@@ -1,0 +1,74 @@
+.tw-project-creator {
+  .popover-content {
+    min-width: 174px;
+
+    .popover-content-keeper {
+      max-width: 100%;
+    }
+  }
+
+
+  .--full-desktop {
+    grid-template-rows: 10rem 1fr 5rem !important;
+  }
+  .close-dialog {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 200px;
+    min-height: 70px;
+
+    .dialog--label {
+      font-size: .8rem;
+      color: rgb(99,114,116);
+    }
+
+    .dialog--content {
+      margin-block: 0;
+      font-size: 1rem;
+      line-height: 1rem;
+      color: rgb(99,114,116);
+    }
+
+    .dialog--buttons {
+      display: flex;
+
+      & > .swf-button {
+        margin-right: .5rem;
+      }
+    }
+  }
+  .form-control--end {
+    padding: 0 .2rem;
+  }
+  .swf-tabs-container {
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    z-index: 700;
+  }
+
+  .collapsed-filter-header {
+    margin-top: -1rem;
+  }
+
+  .range-picker-container {
+    width: 100%;
+
+    .range-picker {
+      width: 100%;
+
+      svg {
+        width: 60px !important;
+      }
+    }
+
+    .date-input-control {
+      width: 50%;
+    }
+
+    .range-picker-element {
+      width: 2rem;
+    }
+  }
+}

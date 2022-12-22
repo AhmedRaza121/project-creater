@@ -1,0 +1,48 @@
+.record-form {
+  &:nth-child(1) {
+    margin-top: 1rem;
+  }
+  width: 98%;
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+
+  &.column {
+    flex-direction: row;
+  }
+
+  .collapsed-filter-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    position: sticky;
+    top: 42px;
+    z-index: 700;
+    background: #fff;
+  }
+
+  &.--mobile {
+    flex-direction: column-reverse;
+  }
+
+  .align-right,
+  .align-left {
+    width: 100%;
+  }
+
+  .align-left {
+    margin-right: 1rem;
+  }
+
+  .record-field {
+    &.--show {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &.hidden {
+    display: none;
+  }
+}

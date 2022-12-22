@@ -1,0 +1,10 @@
+{
+  "development": {
+    "proxy": {
+      "proxies": ["/api", "/scripts", "/angular.do"]
+    }
+  },
+  "styles": {
+      "themes": []
+  }
+}
